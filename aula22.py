@@ -20,3 +20,4 @@
 #     print('Sair')
 
 # Avaliação de curto circuito
+print(True and True and True)
