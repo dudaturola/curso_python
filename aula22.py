@@ -20,4 +20,5 @@
 #     print('Sair')
 
 # Avaliação de curto circuito
-print(True and True and True)
+senha = input('Senha: ') or 'Sem senha'
+print(senha)
