@@ -20,14 +20,39 @@ numero = input('Digite um número: ')
 
 try:
     numero = int(numero) # Se conseguir, é um número inteiro
+
     if numero % 2 == 0:
         print('O número que digitou é par!')
     else:
         print('O número que digitou é ímpar!')
+
 except ValueError: # Caso a conversão falhe, significa que a entrada não é um número inteiro
     print('O número digitado não é inteiro.')
 
+
+
 hora = input('Digite a hora: ')
 
-if hora >= 0  <= 11:
-    print()
+try:
+    hora = int(hora)
+    
+    if 0 <= hora <=11:
+        print('Bom dia!')
+    elif 12<= hora <=17:
+        print('Boa tarde!')
+    else:
+        print('Boa noite!')
+
+except ValueError:
+    print('Digite um número inteiro')
+
+
+
+nome = input('Digite seu nome: ')
+
+if len(nome) <= 4:
+    print('Seu nome é curto.')
+elif len(nome) == 5 or 6:
+    print('Seu nome é normal.')
+else:
+    print('Seu nome é muito grande.')
