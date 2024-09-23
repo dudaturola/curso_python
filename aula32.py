@@ -16,3 +16,18 @@ Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4
 letras ou menos escreva "Seu nome é curto"; se tiver 5 e 6, escreva
 "Seu nome é normal"; maior que 6 escreva " seu nome é muito grande"
 """
+numero = input('Digite um número: ')
+
+try:
+    numero = int(numero) # Se conseguir, é um número inteiro
+    if numero % 2 == 0:
+        print('O número que digitou é par!')
+    else:
+        print('O número que digitou é ímpar!')
+except ValueError: # Caso a conversão falhe, significa que a entrada não é um número inteiro
+    print('O número digitado não é inteiro.')
+
+hora = input('Digite a hora: ')
+
+if hora >= 0  <= 11:
+    print()
