@@ -29,4 +29,6 @@ lista_a = [1,2,3]
 lista_b = [4,5,6]
 lista_c = lista_a + lista_b
 lista_a.extend(lista_b) 
-"""a função extend extende a lista no caso pedi para incrementar a b"""
+print(lista_a)
+"""a função extend extende a lista, no caso pedi para incrementar a b"""
+  
