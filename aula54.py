@@ -6,12 +6,11 @@ valores da sua lista
 não permita que o programa quebre com erros 
 de índices inexistentes na lista.
 """
-
+import os
 compras = ['arroz', 'feijão', 'leite', 'mussarela', 'ovo']
 
 
 while True:
-
     print('Selecione uma opção')
     opcao = input('[i]nserir [a]pagar [l]istar: ')
 
@@ -30,3 +29,6 @@ while True:
         for indices, itens in enumerate(compras, start=1):
             print(indices, itens)
             continue
+
+
+        
