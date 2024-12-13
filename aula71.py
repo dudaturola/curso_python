@@ -5,9 +5,18 @@ args - Argumentos não nomeados
 
 # Lembre-te de desempacotamento
 x,y,*resto = 1,2,3,4
-print(x,y,resto)
+print(x, y, resto)
 
-def soma(x,y):
-    return x + y
+# def soma(x,y):
+#     return x + y
 
-print(1)
+def soma(*args):
+    total = 0
+    for numero in args:
+        print('Total',total, numero)
+        total = total + numero
+        print('Total',total)
+    print(total)
+
+
+soma(1,2,3,4,5,6)
