@@ -14,5 +14,16 @@ pessoa = {
     'nome': 'Maria Eduarda',
     'sobrenome': 'Campos Turola',
 }
+pessoa['idade']= 21
+
+print(pessoa['idade'])
 #print(len(pessoa))
-print(list(pessoa.keys()))
+# print(list(pessoa.keys()))
+# print(list(pessoa.values()))
+# print(list(pessoa.items()))
+
+# for valor in pessoa.values():
+#     print(valor)
+
+# for chave, valor in pessoa.items():
+#     print(chave,valor)
