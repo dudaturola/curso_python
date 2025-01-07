@@ -18,7 +18,7 @@ familia = [
     {
         'Integrante' : 'Jujuba',
         'Tipo' : 'Gato',
-        'Idade' : 2,
+        'Idade' : 3,
     },
     ]
 
@@ -40,19 +40,6 @@ if resposta_int is not None:
     if resposta_int >= 0 and resposta_int <qtd_opcoes:
             if familia[resposta_int] == pessoa['Integrante']:
                 acertou = True
-
-    print()
-    if acertou:
-        qtd_acertos += 1
-        print('Acertou 👍')
-    else:
-        print('Errou ❌')
-
-    print()
-
-print('Você acertou', qtd_acertos)
-
-
 
 
     
