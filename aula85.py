@@ -4,9 +4,20 @@
 # que contém apenas uma linha. Ou seja, tudo
 # dever ser contido dentro de uma única
 # expressão.
-# lista = [
-#     {'nome': 'Duda', 'sobrenome':'Campos'},
-#     {'nome': 'Isa', 'sobrenome':'Pimenta'},
-#     {'nome': 'Duncan', 'sobrenome':'cat'},
-#     {'nome': 'Jujuba', 'sobrenome':'cat'},
-# ]
+lista = [
+    {'nome': 'Duda', 'sobrenome':'Campos'},
+    {'nome': 'Isa', 'sobrenome':'Pimenta'},
+    {'nome': 'Duncan', 'sobrenome':'Cat'},
+    {'nome': 'Jujuba', 'sobrenome':'Cat'},
+]
+
+def exibir(lista):
+    for item in lista:
+        print(item)
+
+l1 = sorted(lista, key=lambda item: item['nome'])
+l2 = sorted(lista, key=lambda item: item['sobrenome'])
+
+
+exibir(l1)
+exibir(l2)
