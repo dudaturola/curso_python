@@ -14,6 +14,7 @@ lista = [
 def exibir(lista):
     for item in lista:
         print(item)
+    print()
 
 l1 = sorted(lista, key=lambda item: item['nome'])
 l2 = sorted(lista, key=lambda item: item['sobrenome'])
