@@ -11,10 +11,11 @@ lista = {
     ('b','valor a'),
 }
 
-dc = {
+disctionary_comprehension = {
     chave: valor
     for chave, valor in lista
-}
+}# Dictionary Comprehension usa o valor e a chave, esse é o objetivo dele
 
-s1 = {2 ** i for i in range(10)}
-print(s1)
+set_comprehension = {2 ** i for i in range(10)} 
+# set comprehension pois o set só pensa em valores
+print(set_comprehension)
